@@ -30,7 +30,7 @@ class MainPage extends StatefulWidget {
 class _MainPageState extends State<MainPage> {
   int currentIndex = 0;
 
-  final List<Widget> pages = const [
+  final List<Widget> pages = [
     HomePage(),
     MutasiPage(),
     AktivitasPage(),
@@ -335,8 +335,27 @@ class AktivitasPage extends StatelessWidget {
 class AkunPage extends StatelessWidget {
   const AkunPage({super.key});
 
+  final String namaUser = "Mohammad Iqbal";
+
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(body: Center(child: Text("Halaman Akun")));
+    return Scaffold(
+      appBar: AppBar(title: const Text("Akun"), backgroundColor: Colors.blue),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const CircleAvatar(radius: 40, child: Icon(Icons.person, size: 40)),
+            const SizedBox(height: 15),
+            Text(
+              namaUser,
+              style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 5),
+            const Text("Pengguna Mobile Banking"),
+          ],
+        ),
+      ),
+    );
   }
 }
