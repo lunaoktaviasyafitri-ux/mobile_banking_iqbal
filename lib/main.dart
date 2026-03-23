@@ -178,7 +178,9 @@ class _HomePageState extends State<HomePage> {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(12),
                 image: const DecorationImage(
-                  image: NetworkImage("https://picsum.photos/400/200"),
+                  image: NetworkImage(
+                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSjdvMQCtICt3cBPvpoZw3ZMONVN4FxRjcVdBDs9JO7KfGqltzPnXZkcg0zR0FNilBzROorAPBqNJaQUsXi8RLmCp-53vt&s&ec=121585077",
+                  ),
                   fit: BoxFit.cover,
                 ),
               ),
