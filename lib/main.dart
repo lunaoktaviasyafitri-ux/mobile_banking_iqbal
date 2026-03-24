@@ -86,7 +86,7 @@ class _HomePageState extends State<HomePage> {
           children: [
             Text("Selamat Malam", style: TextStyle(fontSize: 14)),
             Text(
-              "User Mobile Banking",
+              "Mohammad Iqbal",
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
           ],
